@@ -267,6 +267,65 @@
               </td>
           </tr>
 
+          <!-- PR 2019 - One-shot Logo -->
+          <tr onmouseout="PR19_0_stop()" onmouseover="PR19_0_start()">
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='PR19_0_image'><img src='images/PR19_1.JPG'></div>
+                <img src='images/PR19_2.JPG'>
+              </div>
+              <script type="text/javascript">
+                function PR19_0_start() {
+                  document.getElementById('PR19_0_image').style.opacity = "1";
+                }
+                function PR19_0_stop() {
+                  document.getElementById('PR19_0_image').style.opacity = "0";
+                }
+                PR19_0_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/pii/S0031320319302626?dgcid=rss_sd_all" target="_blank">
+                <papertitle><font size="3">A Deep One-Shot Network for Query-based Logo Retrieval</font></papertitle>
+              </a>
+              <br>
+
+               <strong><font size="3"> Ayan Kumar Bhunia </font></strong>, <font size="3">Ankan Kumar Bhunia</font>,
+              <font size="3">Shuvozit Ghose</font>, <font size="3">Abhirup Das</font>, <font size="3">Partha Pratim Roy</font>, <font size="3">Umapada Pal</font>
+              <br><font size="3">
+              <em>Pattern Recognition(<strong><font size="3.5">PR</font></strong>)</em>, 2019
+              </font>
+              <br>
+              <p></p>
+              <a href="javascript:void(0);" onclick="myFunction('PR19_0_abs')"><font size="3">Abstract</font></a> /
+              <a href="https://github.com/AyanKumarBhunia/Deep-One-Shot-Logo-Retrieval" target="_blank"><font size="3">Code</font></a> /
+              <a href="https://arxiv.org/abs/1811.01395" target="_blank" target="_blank"><font size="3">arXiv</font></a> /
+              <a href="javascript:void(0);" onclick="myFunction('PR19_0_bib')"><font size="3">BibTex</font></a>
+              <p></p>
+              <div id="PR19_0_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+                <em>
+                  Logo detection in real-world scene images is an important problem with applications in advertisement and marketing. Existing general-purpose object detection methods require large training data with annotations for every logo class. These methods do not satisfy the incremental demand of logo classes necessary for practical deployment since it is practically impossible to have such annotated data for new unseen logo. In this work, we develop an easy-to-implement query-based logo detection and localization system by employing a one-shot learning technique using off the shelf neural network components. Given an image of a query logo, our model searches for logo within a given target image and predicts the possible location of the logo by estimating a binary segmentation mask. The proposed model consists of a conditional branch and a segmentation branch. The former gives a conditional latent representation of the given query logo which is combined with feature maps of the segmentation branch at multiple scales in order to obtain the matching location of the query logo in a target image. Feature matching between the latent query representation and multi-scale feature maps of segmentation branch using simple concatenation operation followed by 1 × 1 convolution layer makes our model scale-invariant. Despite its simplicity, our query-based logo retrieval framework achieved superior performance in FlickrLogos-32 and TopLogos-10 dataset over different existing baseline methods.
+                </em>
+              </font></div>
+              <div id="PR19_0_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+                <br>
+                @article{bhunia2019deep,
+                  title={A Deep One-Shot Network for Query-based Logo Retrieval}, <br>
+                  author={Bhunia, Ayan Kumar and Bhunia, Ankan Kumar and Ghose, Shuvozit and Das, Abhirup and Roy, Partha Pratim and Pal, Umapada},
+                  journal={Pattern Recognition},
+                  pages={106965},<br>
+                  year={2019},<br>
+                  publisher={Elsevier}}
+              </font></div>
+              </td>
+          </tr>
+
+
+
+
+
+
+
 <!--                    &lt;!&ndash; CVPR 2019 - HANDWRITING RECOGNITION &ndash;&gt;-->
 <!--          <tr onmouseout="cvpr19_0_stop()" onmouseover="cvpr19_0_start()">-->
 <!--            <td style="padding:0px;width:25%;vertical-align:middle">-->
