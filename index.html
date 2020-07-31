@@ -101,8 +101,62 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+                          <!-- BMVC2020 - HANDWRITING RECOGNITION -->
+          <tr onmouseout="bmvc2020_0_stop()" onmouseover="bmvc20_0_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bmvc2020_0_image'><img src='images/bmvc2020_1.jpg'></div>
+                <img src='images/bmvc2020_1.jpg'>
+              </div>
+              <script type="text/javascript">
+                function bmvc2020_0_start() {
+                  document.getElementById('bmvc2020_0_image').style.opacity = "1";
+                }
+
+                function bmvc2020_0_stop() {
+                  document.getElementById('bmvc2020_0_image').style.opacity = "0";
+                }
+                bmvc2020_0_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2007.15103.pdf" target="_blank">
+                <papertitle><font size="3">Cross-Modal Hierarchical Modelling for Fine-Grained Sketch Based Image Retrieval</font></papertitle>
+              </a>
+              <br>
+               <font size="3">Aneeshan Sain</font>, <strong><font size="3"> Ayan Kumar Bhunia</font></strong>, <font size="3">Yongxin Yang</font>,
+              <font size="3">Tao Xiang</font>, <font size="3">Yi-Zhe Song</font> <font size="3"></font>.
+              <br><font size="3">
+              <em>British Machine Vision Conference (<strong><font size="3.5">BMVC </font></strong>)</em>, 2020.
+              </font>
+              <br>
+              <p></p>
+              <a href="javascript:void(0);" onclick="myFunction('bmvc2020_0_abs')"><font size="3">Abstract</font></a> /
+<!--              <a href="https://github.com/AyanKumarBhunia/sketch-transformerMMD" target="_blank"><font size="3">Code</font></a> /-->
+              <a href="https://arxiv.org/abs/2007.15103" target="_blank" target="_blank"><font size="3">arXiv</font></a> /
+              <a href="javascript:void(0);" onclick="myFunction('bmvc2020_0_bib')"><font size="3">BibTex</font></a>
+<!--              !<font color="red"><strong>(Oral Presentation)</strong></font>-->
+              <p></p>
+              <div id="bmvc2020_0_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+                <em> Sketch as an image search query is an ideal alternative to text in capturing the fine-grained visual details. Prior successes on fine-grained sketch-based image retrieval (FG-SBIR) have demonstrated the importance of tackling the unique traits of sketches as opposed to photos, e.g., temporal vs. static, strokes vs. pixels, and abstract vs. pixel-perfect. In this paper, we study a further trait of sketches that has been overlooked to date, that is, they are hierarchical in terms of the levels of detail -- a person typically sketches up to various extents of detail to depict an object. This hierarchical structure is often visually distinct. In this paper,  we design a novel network that is capable of cultivating sketch-specific hierarchies and exploiting them to match sketch with photo at corresponding hierarchical levels. In particular, features from a sketch and a photo are enriched using cross-modal co-attention, coupled with hierarchical node fusion at every level to form a better embedding space to conduct retrieval. Experiments on common benchmarks show our method to outperform state-of-the-arts by a significant margin.
+                </em>
+              </font></div>
+              <div id="bmvc2020_0_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+                <br>
+                @InProceedings{sain2020crossmodal,<br>
+                author = {Aneeshan Sain and Ayan Kumar Bhunia and Yongxin Yang and Tao Xiang and Yi-Zhe Song},<br>
+                title = {Cross-Modal Hierarchical Modelling for Fine-Grained Sketch Based Image Retrieval},<br>
+                booktitle = {BMVC},<br>
+                month = {September},<br>
+                year = {2020}<br>
+                }
+                </font></div>
+              </td>
+          </tr>
+
+
                   <!-- siggraphasia2020 - HANDWRITING RECOGNITION -->
-          <tr onmouseout="siga2020_0_stop()" onmouseover="cvpr20_0_start()">
+          <tr onmouseout="siga2020_0_stop()" onmouseover="siga20_0_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='siga2020_0_image'><img src='images/siga2020_1.jpg'></div>
