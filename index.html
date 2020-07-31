@@ -58,7 +58,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/ayancircle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ayancircle.png" class="hoverZoomLink"></a>
+              <a href="images/ayan2.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ayan2.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -101,7 +101,60 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+                  <!-- siggraphasia2020 - HANDWRITING RECOGNITION -->
+          <tr onmouseout="siga2020_0_stop()" onmouseover="cvpr20_0_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='siga2020_0_image'><img src='images/siga2020_1.jpg'></div>
+                <img src='images/siga2020_2.jpg'>
+              </div>
+              <script type="text/javascript">
+                function siga2020_0_start() {
+                  document.getElementById('siga2020_0_image').style.opacity = "1";
+                }
 
+                function siga2020_0_stop() {
+                  document.getElementById('siga2020_0_image').style.opacity = "0";
+                }
+                siga2020_0_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ayankumarbhunia.github.io/" target="_blank">
+                <papertitle><font size="3">Pixelor: A Competitive Sketching AI Agent. So you think you can beat me?</font></papertitle>
+              </a>
+              <br>
+               <strong><font size="3"> Ayan Kumar Bhunia*</font></strong>, <font size="3">Ayan Das*</font>, <font size="3">Umar Riaz Muhammad*</font>, <font size="3">Yongxin Yang</font>, <font size="3">Timothy M. Hospedalis</font>,
+              <font size="3">Tao Xiang</font>, <font size="3">Yulia Gryaditskaya</font>, <font size="3">Yi-Zhe Song</font> <font size="3"></font>.
+              <br><font size="3">
+              <em><strong><font size="3.5">SIGGRAPH Asia</font></strong></em>, 2020.
+
+              </font>
+              <br>
+              <p></p>
+              <a href="javascript:void(0);" onclick="myFunction('siga2020_0_abs')"><font size="3">Abstract</font></a> /
+              <a href="https://github.com/AyanKumarBhunia/sketch-transformerMMD" target="_blank"><font size="3">Code</font></a> /
+              <a href="https://arxiv.org/abs/2002.10310" target="_blank" target="_blank"><font size="3">arXiv</font></a> /
+              <a href="javascript:void(0);" onclick="myFunction('siga2020_0_bib')"><font size="3">BibTex</font></a>
+              <font>(*equal contribution)</font>
+<!--              <font color="red"><strong>(Oral Presentation)</strong></font>-->
+              <p></p>
+              <div id="siga2020_0_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+                <em> We present the first competitive drawing agent Pixelor that exhibits human-level performance at a Pictionary-like sketching game, where the participant whose sketch is recognized first is a winner. Our AI agent can autonomously sketch a given visual concept, and achieve a recognizable rendition as quickly or faster than a human competitor. The key to victory for the agent is to learn the optimal stroke sequencing strategies that generate the most recognizable and distinguishable strokes first. Training Pixelor is done in two steps. First, we infer the optimal stroke order that maximizes early recognizability of human training sketches. Second, this order is used to supervise the training of a sequence-to-sequence stroke generator. Our key technical contributions are a tractable search of the exponential space of orderings using neural sorting; and an improved Seq2Seq Wasserstein (S2S-WAE) generator that uses an optimal-transport loss to accommodate the multi-modal nature of the optimal stroke distribution. Our analysis shows that Pixelor is better than the human players of the Quick, Draw! game, under both AI and human judging of early recognition. To analyze the impact of human competitors’ strategies, we conducted a further human study with participants being given unlimited thinking time and training in early recognizability by feedback from an AI judge. The study shows that humans do gradually improve their strategies with training, but overall Pixelor still matches human performance. We will release the code and the dataset, optimized for the task of early recognition, upon acceptance.
+                </em>
+              </font></div>
+              <div id="siga2020_0_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+                <br>
+                @InProceedings{sketchxpixelor,<br>
+                author = {Ayan Kumar Bhunia and Ayan Das and Umar Riaz Muhammad and Yongxin Yang and Timothy M. Hospedales and Tao Xiang and Yulia Gryaditskaya and Yi-Zhe Song},<br>
+                title = {Pixelor: A Competitive Sketching AI Agent. So you think you can beat me?},<br>
+                booktitle = {Siggraph Asia},<br>
+                month = {November},<br>
+                year = {2020}<br>
+                }
+              </font></div>
+              </td>
+          </tr>
                   <!-- CVPR 2019 - HANDWRITING RECOGNITION -->
           <tr onmouseout="cvpr20_0_stop()" onmouseover="cvpr20_0_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -121,7 +174,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2002.10310" target="_blank">
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Bhunia_Sketch_Less_for_More_On-the-Fly_Fine-Grained_Sketch-Based_Image_Retrieval_CVPR_2020_paper.html" target="_blank">
                 <papertitle><font size="3">Sketch Less for More: On-the-Fly Fine-Grained Sketch Based Image Retrieval</font></papertitle>
               </a>
               <br>
