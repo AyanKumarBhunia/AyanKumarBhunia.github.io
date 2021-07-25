@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="ab02340@131.227.65.57:22">
+      <paths name="as03208@cvplws84.eps.surrey.ac.uk:22">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -16,35 +16,21 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="ayan@131.227.94.125:22 password">
+      <paths name="ayanisizeco@umvsyhlzdx.dithen.com:22">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="ayan@131.227.94.125:22 password (1)">
+      <paths name="isize_userX1@185.4.148.22:22">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="ubuntu@ec2-54-203-97-57.us-west-2.compute.amazonaws.com:22">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="ubuntu@ec2-54-203-97-57.us-west-2.compute.amazonaws.com:22 (1)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="ubuntu@ec2-54-203-97-57.us-west-2.compute.amazonaws.com:22 key">
+      <paths name="isize_userX1@37.230.134.230:22">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
