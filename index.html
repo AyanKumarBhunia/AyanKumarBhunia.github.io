@@ -126,11 +126,17 @@
                   <p>
                     <font size="3">
 
+
                       <li><sup>
                           <font color="red"><strong>New!!</strong></font>
                         </sup>
+                        <font size=3.5"> [March 2022]:</font></b> <i><b>Four</b></i> papers got accepted in <b>CVPR</b>
+                        2022.
+                      </li>
+
+                      <li>
                         <font size=3.5"> [July 2021]:</font></b> <i><b>Three</b></i> papers got accepted in <b>ICCV</b>
-                        2021!!
+                        2021.
                       </li>
 
                       <li>
@@ -313,9 +319,9 @@
                   (i) Cross-modal Image Retrieval (ii) Generative Adversarial Network (iii) Meta-Learning
                   (iv) Self-supervised Learning (v) Image/Video Denoising
                   (vi)Text Recognition
-                  (vii) Image to Sequence Generation & (viii) RL for Vision
+                  (vii) Image to Sequence Generation (viii) RL for Vision
                   (ix) Semi-supervised Learning
-                  (vii) Fine-grained Visual Recognition & (viii) Knowledge Distillation
+                  (vii) Fine-grained Visual Recognition (viii) Knowledge Distillation
                   (ix) Incremental Learning.
 
                   </font>
@@ -471,6 +477,381 @@
                 }
               }
             </script>
+
+            <table
+              style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
+                    <p>
+                    </p>
+                    <heading>
+                      <font size="5">2022</font>
+                    </heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <table
+              style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+
+
+
+
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="CVPR22_2_stop()" onmouseover="CVPR22_2_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR22_2_image'><img src='images/CVPR22_2_1.JPG'></div>
+                      <img src='images/CVPR22_2_1.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR22_2_start() {
+                        document.getElementById('CVPR22_2_image').style.opacity = "1";
+                      }
+
+                      function CVPR22_2_stop() {
+                        document.getElementById('CVPR22_2_image').style.opacity = "0";
+                      }
+                      CVPR22_2_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Bhunia_Vectorization_and_Rasterization_Self-Supervised_Learning_for_Sketch_and_Handwriting_CVPR_2021_paper.html"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">Doodle It Yourself: Class Incremental Learning by Drawing a Few Sketches</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Viswanatha Reddy Gajjala</font>, <font size="3">Subhadeep Koley</font>,
+                    <font size="3">Rohit Kundu</font>, <font size="3">Aneeshan Sain</font>, <font size="3">Tao Xiang
+                    </font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong></strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_2_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/Self-Supervised-Learning-for-Sketch" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/abs/2103.13716" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_2_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR22_2_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> The human visual system is remarkable in learning new visual concepts from just a few
+                          examples. This is precisely the goal behind few-shot class incremental learning (FSCIL), where
+                          the emphasis is additionally placed on ensuring the model does not suffer from ``forgetting''.
+                          {In this paper, we push the boundary further for FSCIL by addressing} two key questions that
+                          bottleneck its ubiquitous application (i) can the model learn from diverse modalities other
+                          than just photo (as humans do), and (ii) what if photos are not readily accessible (due to
+                          ethical and privacy constraints). Our key innovation lies in advocating the use of sketches as
+                          a new modality for class support. The product is a ``Doodle It Yourself" (DIY) FSCIL framework
+                          where the users can freely sketch a few examples of a novel class for the model to learn to
+                          recognize photos of that class. For that, we present a framework that infuses (i) gradient
+                          consensus for domain invariant learning, (ii) knowledge distillation for preserving old class
+                          information, and (iii) graph attention networks for message passing between old and novel
+                          classes. We experimentally show that sketches are better class support than text in the
+                          context of FSCIL, echoing findings elsewhere in the sketching literature.</em>
+                      </font>
+                    </div>
+                    <div id="CVPR22_2_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{DoodleIncremental,<br>
+                        author = {Ayan Kumar Bhunia and Viswanatha Reddy Gajjala and Subhadeep Koley and Rohit Kundu and
+                        Aneeshan Sain and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {Doodle It Yourself: Class Incremental Learning by Drawing a Few Sketches},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="CVPR22_1_stop()" onmouseover="CVPR22_1_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR22_1_image'><img src='images/CVPR22_1_1.JPG'></div>
+                      <img src='images/CVPR22_1_1.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR22_1_start() {
+                        document.getElementById('CVPR22_1_image').style.opacity = "1";
+                      }
+
+                      function CVPR22_1_stop() {
+                        document.getElementById('CVPR22_1_image').style.opacity = "0";
+                      }
+                      CVPR22_1_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Bhunia_Vectorization_and_Rasterization_Self-Supervised_Learning_for_Sketch_and_Handwriting_CVPR_2021_paper.html"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">Sketching without Worrying: Noise-Tolerant Sketch-Based Image Retrieval</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Subhadeep Koley</font>, <font size="3">Abdullah Faiz Ur Rahman Khilji
+                    </font>, <font size="3">Aneeshan Sain</font>, <font size="3">Pinaki Nath Chowdhury</font>, <font
+                      size="3">Tao Xiang</font>, <font size="3">Yi-Zhe Song
+                    </font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong></strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_1_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/Self-Supervised-Learning-for-Sketch" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/abs/2103.13716" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_1_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR22_1_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> Sketching enables many exciting applications, notably, image retrieval. The
+                          fear-to-sketch problem (i.e., ``I can't sketch") has however proven to be fatal for its
+                          widespread adoption. This paper tackles this ``fear" head on, and for the first time,
+                          proposes an auxiliary module for existing retrieval models that predominantly lets the users
+                          sketch without having to worry. We first conducted a pilot study that revealed the secret
+                          lies in the existence of noisy strokes, but not so much of the ``I can't sketch". We
+                          consequently design a stroke subset selector that {detects noisy strokes, leaving only
+                          those} which make a positive contribution towards successful retrieval. Our Reinforcement
+                          Learning based formulation quantifies the importance of each stroke present in a given
+                          subset, based on the extend to which that stroke contributes to retrieval. When combined
+                          with pre-trained retrieval models as a pre-processing module, we achieve a significant gain
+                          of 8\%-10\% over standard baselines and in turn report new state-of-the-art performance.
+                          Last but not least, we demonstrate the selector once trained, can also be used in a
+                          plug-and-play manner to empower various sketch applications in ways that were not previously
+                          possible.</em>
+                      </font>
+                    </div>
+                    <div id="CVPR22_1_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{strokesubset,<br>
+                        author = {Ayan Kumar Bhunia and Subhadeep Koley and Abdullah Faiz Ur Rahman Khilji and
+                        Aneeshan Sain
+                        and Pinaki Nath Chowdhury and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {Sketching without Worrying: Noise-Tolerant Sketch-Based Image Retrieval},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="CVPR22_3_stop()" onmouseover="CVPR22_3_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR22_3_image'><img src='images/CVPR22_3_1.JPG'></div>
+                      <img src='images/CVPR22_3_1.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR22_3_start() {
+                        document.getElementById('CVPR22_3_image').style.opacity = "1";
+                      }
+
+                      function CVPR22_3_stop() {
+                        document.getElementById('CVPR22_3_image').style.opacity = "0";
+                      }
+                      CVPR22_3_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Bhunia_Vectorization_and_Rasterization_Self-Supervised_Learning_for_Sketch_and_Handwriting_CVPR_2021_paper.html"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">Partially Does It: Towards Scene-Level FG-SBIR with Partial Input</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+
+                    <font size="3">Pinaki nath Chowdhury</font>, <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Viswanatha Reddy Gajjala</font>, <font size="3">Aneeshan Sain</font>,
+                    <font size="3">Tao Xiang</font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong></strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_3_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/Self-Supervised-Learning-for-Sketch" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/abs/2103.13716" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_3_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR22_3_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> We scrutinise an important observation plaguing scene-level sketch research -- that a
+                          significant portion of scene sketches are ``partial". A quick pilot study reveals: (i) a scene
+                          sketch does not necessarily contain all objects in the corresponding photo, due to the
+                          subjective holistic interpretation of scenes, (ii) there exists significant empty (white)
+                          regions as a result of object-level abstraction, and as a result, (iii) existing scene-level
+                          fine-grained sketch-based image retrieval methods collapse as scene sketches become more
+                          partial. To solve this ``partial" problem, we advocate for a simple set-based approach using
+                          optimal transport (OT) to model cross-modal region associativity in a partially-aware fashion.
+                          Importantly, we improve upon OT to further account for holistic partialness by comparing
+                          intra-modal adjacency matrices. Our proposed method is not only robust to partial
+                          scene-sketches but also yields state-of-the-art performance on existing datasets.</em>
+                      </font>
+                    </div>
+                    <div id="CVPR22_3_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{PartialSBIR,<br>
+                        author = {Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Viswanatha Reddy Gajjala and Aneeshan
+                        Sain and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {Partially Does It: Towards Scene-Level FG-SBIR with Partial Input},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="CVPR22_3_stop()" onmouseover="CVPR22_3_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR22_3_image'><img src='images/CVPR22_3_1.JPG'></div>
+                      <img src='images/CVPR22_3_1.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR22_3_start() {
+                        document.getElementById('CVPR22_3_image').style.opacity = "1";
+                      }
+
+                      function CVPR22_3_stop() {
+                        document.getElementById('CVPR22_3_image').style.opacity = "0";
+                      }
+                      CVPR22_3_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Bhunia_Vectorization_and_Rasterization_Self-Supervised_Learning_for_Sketch_and_Handwriting_CVPR_2021_paper.html"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">Sketch3T: Test-time Training for Zero-Shot SBIR</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <strong>
+                      <font size="3">Aneeshan Sain</font>, <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Vaishnav Potlapalli </font>, <font size="3">Pinaki Nath Chowdhury</font>,
+                    <font size="3">Tao Xiang</font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong></strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_3_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/Self-Supervised-Learning-for-Sketch" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/abs/2103.13716" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR22_3_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR22_3_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> Zero-shot sketch-based image retrieval typically asks for a trained model to be applied as
+                          is to unseen categories. In this paper, we question to argue that this setup by definition is
+                          not compatible with the inherent abstract and subjective nature of sketches -- the model might
+                          transfer well to new categories, but will not understand sketches existing in different
+                          test-time distribution as a result. We thus extend ZS-SBIR asking it to transfer to both
+                          categories and sketch distributions. Our key contribution is a test-time training paradigm
+                          that can adapt using just one sketch. Since there is no paired photo, we make use of a sketch
+                          raster-vector reconstruction module as a self-supervised auxiliary task. To maintain the
+                          fidelity of the trained cross-modal joint embedding during test-time update, we design a novel
+                          meta-learning based training paradigm to learn a separation between model updates incurred by
+                          this auxiliary task from those off the primary objective of discriminative learning. Extensive
+                          experiments show our model to outperform state-of-the-arts, thanks to the proposed test-time
+                          adaption that not only transfers to new categories but also accommodates to new sketching
+                          styles.</em>
+                      </font>
+                    </div>
+                    <div id="CVPR22_3_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{Sketch3T,<br>
+                        author = {Aneeshan Sain and Ayan Kumar Bhunia and Vaishnav Potlapalli and Pinaki Nath Chowdhury
+                        and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {Sketch3T: Test-time Training for Zero-Shot SBIR},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+            </table>
 
             <table
               style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
