@@ -72,3 +72,27 @@ span.collab {
   font-weight:bold;
   color:#328fa8;
 }
+
+.buttonpub {
+  background-color: #ecf5ec; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #e8f0e8;
+}
+
+.button1:hover {
+  background-color: #616661;
+  color: white;
+}
