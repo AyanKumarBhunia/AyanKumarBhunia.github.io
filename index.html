@@ -87,7 +87,7 @@
 
                   </p>
                   Top-venue Conference publications (March 2022):
-                  10x<b>CVPR</b>, 3x<b>ICCV</b>, 1x<b>ECCV</b>, 1x<b>Siggraph Asia</b>.
+                  10x<b>CVPR</b>, 3x<b>ICCV</b>, 3x<b>ECCV</b>, 1x<b>Siggraph Asia</b>.
 
 
                   <p style="text-align:center">
@@ -126,6 +126,12 @@
                   <p>
                     <font size="3">
 
+                      <li><sup>
+                          <font color="red"><strong>New!!</strong></font>
+                        </sup>
+                        <font size=3.5"> [July 2022]:</font></b> <i><b>Two</b></i> papers got accepted in <b>ECCV</b>
+                        2022.
+                      </li>
 
                       <li><sup>
                           <font color="red"><strong>New!!</strong></font>
@@ -503,7 +509,187 @@
               <tbody>
 
 
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="ECCV22_1_stop()" onmouseover="ECCV22_1_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='ECCV22_1_image'><img src='images/ECCV22_2_1.JPG'></div>
+                      <img src='images/ECCV22_2_1.jpg'>
+                    </div>
+                    <script type="text/javascript">
+                      function ECCV22_1_start() {
+                        document.getElementById('ECCV22_1_image').style.opacity = "1";
+                      }
 
+                      function ECCV22_1_stop() {
+                        document.getElementById('ECCV22_1_image').style.opacity = "0";
+                      }
+                      ECCV22_1_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/pdf/2203.02113.pdf" target="_blank">
+                      <papertitle>
+                        <font size="3">FS-COCO: Towards Understanding of Freehand Sketches of Common Objects in Context
+                        </font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <font size="3">Pinaki Nath Chowdhury</font>, <font size="3">Aneeshan Sain</font>, <font size="3">
+                      Yulia Gryaditskaya</font>, <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>,
+                    <font size="3">Tao
+                      Xiang
+                    </font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>European Conference on Computer Vision(<strong>
+                          <font size="3.5">ECCV</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong>(New!)</strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('ECCV22_1_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="http://www.pinakinathc.me/fscoco/" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('ECCV22_1_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="ECCV22_1_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> We advance sketch research to scenes with the first dataset of freehand scene sketches,
+                          FS-COCO. With practical applications in mind, we collect sketches that convey well scene
+                          content but can be sketched within a few minutes by a person with any sketching skills. Our
+                          dataset comprises 10,000 freehand scene vector sketches with per point space-time information
+                          by 100 non-expert individuals, offering both object- and scene-level abstraction. Each sketch
+                          is augmented with its text description. Using our dataset, we study for the first time the
+                          problem of fine-grained image retrieval from freehand scene sketches and sketch captions. We
+                          draw insights on: (i) Scene salience encoded in sketches using the strokes temporal order;
+                          (ii) Performance comparison of image retrieval from a scene sketch and an image caption; (iii)
+                          Complementarity of information in sketches and image captions, as well as the potential
+                          benefit of combining the two modalities. In addition, we extend a popular vector sketch
+                          LSTM-based encoder to handle sketches with larger complexity than was supported by previous
+                          work. Namely, we propose a hierarchical sketch decoder, which we leverage at a sketch-specific
+                          “pre-text” task. Our dataset enables for the first time research on freehand scene sketch
+                          understanding and its practical applications</em>
+                      </font>
+                    </div>
+                    <div id="ECCV22_1_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{FSCOCO,<br>
+                        author = {Pinaki Nath Chowdhury and Aneeshan Sain and Yulia Gryaditskaya and Ayan Kumar Bhunia
+                        and
+                        and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {FS-COCO: Towards Understanding of Freehand Sketches
+                        of Common Objects in Context},<br>
+                        booktitle = {ECCV},<br>
+                        month = {October},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+                <!-- CVPR21 - HANDWRITING RECOGNITION -->
+                <tr onmouseout="ECCV22_2_stop()" onmouseover="ECCV22_2_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='ECCV22_2_image'><img src='images/ECCV22_1_1.JPG'></div>
+                      <img src='images/ECCV22_1_1.jpg'>
+                    </div>
+                    <script type="text/javascript">
+                      function ECCV22_2_start() {
+                        document.getElementById('ECCV22_2_image').style.opacity = "1";
+                      }
+
+                      function ECCV22_2_stop() {
+                        document.getElementById('ECCV22_2_image').style.opacity = "0";
+                      }
+                      ECCV22_2_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank">
+                      <papertitle>
+                        <font size="3">Adaptive Fine-Grained Sketch-Based Image Retrieval</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Aneeshan Sain</font>, <font size="3">Parth Hiren Shah</font>,
+                    <font size="3">Animesh Gupta</font>, <font size="3">Pinaki Nath Chowdhury</font>, <font size="3">Tao
+                      Xiang
+                    </font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>European Conference on Computer Vision(<strong>
+                          <font size="3.5">ECCV</font>
+                        </strong>)</em>,
+                      2022 <font color="red"><strong>(New!)</strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('ECCV22_2_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('ECCV22_2_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="ECCV22_2_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> The recent focus on Fine-Grained Sketch-Based Image Retrieval (FG-SBIR) has shifted towards
+                          generalising a model to new categories without any training data from them. In real-world
+                          applications, however, a trained FG-SBIR model is often applied to both new categories and
+                          different human sketchers, i.e., different drawing styles. Although this complicates the
+                          generalisation problem, fortunately, a handful of examples are typically available, enabling
+                          the model to adapt to the new category/style. In this paper, we offer a novel perspective --
+                          instead of asking for a model that generalises, we advocate for one that quickly adapts, with
+                          just very few samples during testing (in a few-shot manner). To solve this new problem, we
+                          introduce a novel model-agnostic meta-learning (MAML) based framework with several key
+                          modifications: (1) As a retrieval task with a margin-based contrastive loss, we simplify the
+                          MAML training in the inner loop to make it more stable and tractable. (2) The margin in our
+                          contrastive loss is also meta-learned with the rest of the model. (3) Three additional
+                          regularisation losses are introduced in the outer loop, to make the meta-learned FG-SBIR model
+                          more effective for category/style adaptation. Extensive experiments on public datasets suggest
+                          a large gain over generalisation and zero-shot based approaches, and a few strong few-shot
+                          baselines..</em>
+                      </font>
+                    </div>
+                    <div id="ECCV22_2_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{adaptivefgsbir,<br>
+                        author = {Ayan Kumar Bhunia and Aneeshan Sain and Parth Hiren Shah and Animesh Gupta and
+                        Pinaki Nath Chowdhury and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {Adaptive Fine-Grained Sketch-Based Image Retrieval},<br>
+                        booktitle = {ECCV},<br>
+                        month = {October},<br>
+                        year = {2022}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
 
                 <!-- CVPR21 - HANDWRITING RECOGNITION -->
                 <tr onmouseout="CVPR22_2_stop()" onmouseover="CVPR22_2_start()">
