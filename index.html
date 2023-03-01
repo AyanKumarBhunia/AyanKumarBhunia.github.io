@@ -14,6 +14,89 @@
     gtag('config', 'UA-177858501-1');
   </script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #A1A6B4;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000100;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<!-- <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recent_updates">Recent Updates</a></li>
+      <li><a href="#research_interest">Research Interest</a></li>
+      <li><a href="#selected_pubs">
+        <button class="dropbtn">Selected Publication 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </a></li>
+      <li><a href="">CV</a></li>
+    </ul> -->
+  <!-- </nav> -->
+
   <title>Ayan Kumar Bhunia | Computer Vision and Machine Learning Researcher</title>
 
   <meta name="author" content="Ayan Kumar Bhunia | Computer Vision Researcher">
@@ -29,6 +112,25 @@
 
 
 <body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#recent_updates">Recent Updates</a>
+  <a href="#research_interest">Research Interest</a> 
+  <div class="dropdown">
+    <button class="dropbtn" onclick="location.href='#selected_pubs'">Publications
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#selected_pubs_2023">2023</a>
+      <a href="#selected_pubs_2022">2022</a>
+      <a href="#selected_pubs_2021">2021</a>
+    </div>
+  </div>
+  <a href="">CV</a>
+  <!-- <a href="all_paper.html">All Papers</a> -->
+</div>
+
   <table
     style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -40,7 +142,7 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Ayan Kumar Bhunia </name>
+                    <name id="home">Ayan Kumar Bhunia </name>
                   </p>
 
                   <p style="text-align:justify">
@@ -131,7 +233,7 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">
                   <heading>
-                    <font size="5">Recent Updates </font>
+                    <font size="5" id="recent_updates">Recent Updates </font>
                   </heading>
                   <p>
                     <font size="3">
@@ -260,7 +362,7 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">
                   <heading>
-                    <font size="5">Research Interests</font>
+                    <font size="5" id="research_interest">Research Interests</font>
                   </heading>
                   <p>
                     <font size="3">
@@ -494,7 +596,7 @@
                     <p>
                     </p>
                     <heading>
-                      <font size="5">Selected Publications</font>
+                      <font size="5" id="selected_pubs">Selected Publications</font>
                     </heading>
                   </td>
                 </tr>
@@ -520,7 +622,7 @@
                     <p>
                     </p>
                     <heading>
-                      <font size="5">2022</font>
+                      <font size="5" id="selected_pubs_2022">2022</font>
                     </heading>
                   </td>
                 </tr>
@@ -1082,7 +1184,7 @@
                     <p>
                     </p>
                     <heading>
-                      <font size="5">2021</font>
+                      <font size="5" id="selected_pubs_2021">2021</font>
                     </heading>
                   </td>
                 </tr>
