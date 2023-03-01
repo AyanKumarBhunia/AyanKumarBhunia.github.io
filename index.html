@@ -1026,6 +1026,101 @@
                     </div>
                   </td>
                 </tr>
+                <!-- CVPR23 - SKETCH -->
+                <tr onmouseout="CVPR23_5_stop()" onmouseover="CVPR23_5_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR23_5_image'><img src='images/CVPR23_5.JPG'></div>
+                      <img src='images/CVPR23_5.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR23_5_start() {
+                        document.getElementById('CVPR23_5_image').style.opacity = "1";
+                      }
+
+                      function CVPR23_5_stop() {
+                        document.getElementById('CVPR23_5_image').style.opacity = "0";
+                      }
+                      CVPR23_5_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">What Can Human Sketches Do for Object Detection?</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <font size="3">Pinaki Nath Chowdhury</font>, <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Aneeshan Sain</font>, <font size="3">Subhadeep Koley</font>, <font
+                      size="3">Soumitri Chattopadhyay</font>,
+                    <font size="3">Tao
+                      Xiang
+                    </font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2023 <font color="red"><strong>(New!)</strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_5_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_5_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR23_5_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> Sketches are highly expressive, inherently capturing subjective and fine-grained visual
+                          cues. The exploration of such innate properties of human sketches has however been limited to
+                          that of image retrieval. In this paper, for the first time, we cultivate the expressiveness of
+                          sketches, but for the fundamental vision task of object detection. The end result is
+                          sketch-enabled object detection framework that detects based on what you sketch -- that
+                          ``zerbra'' (e.g., one that is eating the grass) in a herd of zebras (instance-ware detection),
+                          and only the part (e.g., ``head" of a ``zebra") that you desire (part-aware detection). We
+                          further dictate that our model works without (i) knowing which category to expect at testing
+                          (zero-shot), and (ii) not requiring additional bounding boxes (as per supervised), and class
+                          labels (as per weakly supervised). Instead of devising a model from the ground up, we show an
+                          intuitive synergy between foundation models (e.g., CLIP) and existing sketch models build for
+                          sketch-based image retrieval (SBIR), can already elegantly solve the task -- CLIP to provide
+                          model generalisation, and SBIR to bridge the (sketch
+                          photo) gap. In particular, we first perform independent prompting on both sketch and photo
+                          branches of a SBIR model, to build highly generalisable sketch and photo encoders on the back
+                          of the generalisation ability of CLIP. We then devise a training paradigm to adapt the learned
+                          encoders for object detection, such that the region embeddings of detected boxes are aligned
+                          with the sketch and photo embeddings from SBIR. Evaluating our framework on standard object
+                          detection datasets like PASCAL-VOC and MS-COCO outperforms both supervised (SOD) and weakly
+                          supervise. </em>
+                      </font>
+                    </div>
+                    <div id="CVPR23_5_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{Sketch_FineGrained_ObjectDet,<br>
+                        author = {Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Aneeshan Sain and
+                        Subhadeep Koley and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {What Can Human Sketches Do for Object Detection?},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2023}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
 
