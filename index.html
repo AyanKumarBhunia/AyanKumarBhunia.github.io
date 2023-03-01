@@ -1055,8 +1055,7 @@
                     <br><br>
                     <font size="3">Pinaki Nath Chowdhury</font>, <strong>
                       <font size="3"> Ayan Kumar Bhunia</font>
-                    </strong>, <font size="3">Aneeshan Sain</font>, <font size="3">Subhadeep Koley</font>, <font
-                      size="3">Soumitri Chattopadhyay</font>,
+                    </strong>, <font size="3">Aneeshan Sain</font>, <font size="3">Subhadeep Koley</font>,
                     <font size="3">Tao
                       Xiang
                     </font>, <font size="3">Yi-Zhe Song</font>
@@ -1114,6 +1113,187 @@
                         author = {Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Aneeshan Sain and
                         Subhadeep Koley and Tao Xiang and Yi-Zhe Song},<br>
                         title = {What Can Human Sketches Do for Object Detection?},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2023}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+                <!-- CVPR23 - SKETCH -->
+                <tr onmouseout="CVPR23_6_stop()" onmouseover="CVPR23_6_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR23_6_image'><img src='images/CVPR23_6.JPG'></div>
+                      <img src='images/CVPR23_6.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR23_6_start() {
+                        document.getElementById('CVPR23_6_image').style.opacity = "1";
+                      }
+
+                      function CVPR23_6_stop() {
+                        document.getElementById('CVPR23_6_image').style.opacity = "0";
+                      }
+                      CVPR23_6_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not
+                        </font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <font size="3">Aneeshan Sain</font>, <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Pinaki Nath Chowdhury</font>, <font size="3">Subhadeep Koley</font>,
+                    <font size="3">Tao
+                      Xiang
+                    </font>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2023 <font color="red"><strong>(New!)</strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_6_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_6_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR23_6_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> In this paper, we leverage CLIP for zero-shot sketch based image retrieval (ZS-SBIR). We
+                          are largely inspired by recent advances on foundation models and the unparalleled
+                          generalisation ability they seem to offer, but for the first time tailor it to benefit the
+                          sketch community. We put forward novel designs on how best to achieve this synergy, for both
+                          the category setting and the fine-grained setting (''all''). At the very core of our solution
+                          is a prompt learning setup. First we show just via factoring in sketch-specific prompts, we
+                          already have a category-level ZS-SBIR system that overshoots all prior arts, by a large margin
+                          (24.8%) -- a great testimony on studying the CLIP and ZS-SBIR synergy. Moving onto the
+                          fine-grained setup is however trickier, and requires a deeper dive into this synergy. For
+                          that, we come up with two specific designs to tackle the fine-grained matching nature of the
+                          problem: (i) an additional regularisation loss to ensure the relative separation between
+                          sketches and photos is uniform across categories, which is not the case for the gold standard
+                          standalone triplet loss, and (ii) a clever patch shuffling technique to help establishing
+                          instance-level structural correspondences between sketch-photo pairs. With these designs, we
+                          again observe significant performance gains in the region of 26.9% over previous
+                          state-of-the-art. The take-home message, if any, is the proposed CLIP and prompt learning
+                          paradigm carries great promise in tackling other sketch-related tasks (not limited to ZS-SBIR)
+                          where data scarcity remains a great challenge. </em>
+                      </font>
+                    </div>
+                    <div id="CVPR23_6_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{ZSSBIR_CLIP,<br>
+                        author = { Aneeshan Sain and Ayan Kumar Bhunia and Pinaki Nath Chowdhury and Aneeshan Sain and
+                        Subhadeep Koley and Tao Xiang and Yi-Zhe Song},<br>
+                        title = {
+                        CLIP for All Things Zero-Shot Sketch-Based Image Retrieval, Fine-Grained or Not},<br>
+                        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                        month = {June},<br>
+                        year = {2023}<br>
+                        }
+                      </font>
+                    </div>
+                  </td>
+                </tr>
+                <!-- CVPR23 - SKETCH -->
+                <tr onmouseout="CVPR23_7_stop()" onmouseover="CVPR23_7_start()">
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                      <div class="two" id='CVPR23_7_image'><img src='images/CVPR23_7.JPG'></div>
+                      <img src='images/CVPR23_7.JPG'>
+                    </div>
+                    <script type="text/javascript">
+                      function CVPR23_7_start() {
+                        document.getElementById('CVPR23_7_image').style.opacity = "1";
+                      }
+
+                      function CVPR23_7_stop() {
+                        document.getElementById('CVPR23_7_image').style.opacity = "0";
+                      }
+                      CVPR23_7_stop()
+                    </script>
+                  </td>
+                  <td style="padding:10px;width:75%;vertical-align:middle">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Bhunia_Doodle_It_Yourself_Class_Incremental_Learning_by_Drawing_a_Few_CVPR_2022_paper.pdf"
+                      target="_blank">
+                      <papertitle>
+                        <font size="3">Data-Free Sketch-Based Image Retrieval</font>
+                      </papertitle>
+                    </a>
+                    <br><br>
+                    <font size="3">Abhra Chaudhuri</font>, <strong>
+                      <font size="3"> Ayan Kumar Bhunia</font>
+                    </strong>, <font size="3">Yi-Zhe Song</font>
+                    <font size="3">Anjan Dutta</font>
+                    <font size="3"></font>.
+                    <br>
+                    <font size="3">
+                      <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
+                          <font size="3.5">CVPR</font>
+                        </strong>)</em>,
+                      2023 <font color="red"><strong>(New!)</strong></font>
+                    </font>
+                    <br>
+                    <p></p>
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_7_abs')">
+                      <font size="3">Abstract</font>
+                    </a> /
+                    <a href="https://github.com/AyanKumarBhunia/DIY-FSCIL" target="_blank">
+                      <font size="3">Code</font>
+                    </a> /
+                    <a href="https://arxiv.org/pdf/2203.14843.pdf" target="_blank" target="_blank">
+                      <font size="3">arXiv</font>
+                    </a> /
+                    <a href="javascript:void(0);" onclick="myFunction('CVPR23_7_bib')">
+                      <font size="3">BibTex</font>
+                    </a>
+                    <p></p>
+                    <div id="CVPR23_7_abs" style="display:none; text-align:justify;min-width:350px;">
+                      <font size="3">
+                        <em> Rising concerns about privacy and anonymity preservation of deep learning models have
+                          facilitated research in data-free learning. Primarily based on data-free knowledge
+                          distillation, models developed in this area so far have only been able to operate in a single
+                          modality, performing the same kind of task as that of the teacher. For the first time, we
+                          propose Data-Free Sketch-Based Image Retrieval (DF-SBIR), a cross-modal data-free learning
+                          setting, where teachers trained for classification in a single modality have to be leveraged
+                          by students to learn a cross-modal metric-space for retrieval. The widespread availability of
+                          pre-trained classification models, along with the difficulty in acquiring paired photo-sketch
+                          datasets for SBIR justify the practicality of this setting. We present a methodology for
+                          DF-SBIR, which can leverage knowledge from models independently trained to perform
+                          classification on photos and sketches. We perform extensive empirical evaluation of our model
+                          on the Sketchy and TU-Berlin benchmarks, designing a variety of baselines based on existing
+                          data-free learning literature, and observe that our method surpasses all of them by
+                          significant margins. Our method also achieves mAPs competitive with data-dependent approaches,
+                          all the while requiring no training data. Implementation will be made publicly available upon
+                          acceptance. </em>
+                      </font>
+                    </div>
+                    <div id="CVPR23_7_bib" style="font-family:Courier;display:none;min-width:350px;">
+                      <font size="2">
+                        <br>
+                        @InProceedings{DataFree_SBIR,<br>
+                        author = { Abhra Chaudhuri and Ayan Kumar Bhunia and Yi-Zhe Song and Anjan Dutta},<br>
+                        title = {Data-Free Sketch-Based Image Retrieval},<br>
                         booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
                         month = {June},<br>
                         year = {2023}<br>
