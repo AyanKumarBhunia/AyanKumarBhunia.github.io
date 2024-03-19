@@ -127,6 +127,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
+          <a href="#selected_pubs_2024">2024</a>
           <a href="#selected_pubs_2023">2023</a>
           <a href="#selected_pubs_2022">2022</a>
           <a href="#selected_pubs_2021">2021</a>
@@ -700,25 +701,125 @@
                 }
               </script>
 
-              <table
-                style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
-                      <p>
-                      </p>
-                      <heading>
-                        <font size="5" id="selected_pubs_2023">2023</font>
-                      </heading>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+
+
+
 
 
               <table
-                style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
+              style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
+                    <p>
+                    </p>
+                    <heading>
+                      <font size="5" id="selected_pubs_2024">2024</font>
+                    </heading>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table
+              style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+
+                    <!--CVPR 24-1  -->
+                    <tr onmouseout="CVPR24_1_stop()" onmouseover="CVPR24_1_start()">
+                      <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                          <div class="two" id='CVPR24_1_image'><img src='images/CVPR24_1.JPG'></div>
+                          <img src='images/CVPR24_1.JPG'>
+                        </div>
+                        <script type="text/javascript">
+                          function CVPR24_1_start() {
+                            document.getElementById('CVPR24_1_image').style.opacity = "1";
+                          }
+  
+                          function CVPR24_1_stop() {
+                            document.getElementById('CVPR24_1_image').style.opacity = "0";
+                          }
+                          CVPR24_1_stop()
+                        </script>
+                      </td>
+                      <td style="padding:10px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/pdf/2403.07222.pdf" target="_blank">
+                          <papertitle>
+                            <font size="3">You’ll Never Walk Alone: A Sketch and Text Duet for
+  Fine-Grained Image Retrieval</font>
+                          </papertitle>
+                        </a>
+                        <br><br>
+                         <strong>
+                         <font size="3">Subhadeep Koley</font>, <font size="3"> Ayan Kumar Bhunia</font>,  
+                        </strong> <font size="3">Aneeshan Sain</font>, <font size="3">Pinaki Nath Chowdhury</font>,   
+                       <font size="3">
+                          Tao
+                          Xiang
+                        </font>, <font size="3">Yi-Zhe Song</font>
+                        <font size="3"></font>.
+                        <br>
+                        <font size="3">
+                          <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
+                              <font size="3.5">CVPR</font>
+                            </strong>)</em>,
+                          2024 <font color="red"><strong>(New!)</strong></font>
+                        </font>
+                        <br>
+                        <p></p>
+                        <a href="javascript:void(0);" onclick="myFunction('CVPR24_1_abs')">
+                          <font size="3">Abstract</font>
+                        </a> /
+                        <a href="https://subhadeepkoley.github.io/" target="_blank">
+                          <font size="3">Code</font>
+                        </a> /
+                        <a href="https://arxiv.org/pdf/2403.07222.pdf" target="_blank" target="_blank">
+                          <font size="3">arXiv</font>
+                        </a> /
+                        <a href="javascript:void(0);" onclick="myFunction('CVPR24_1_bib')">
+                          <font size="3">BibTex</font>
+                        </a>
+                        <p></p>
+                        <div id="CVPR24_1_abs" style="display:none; text-align:justify;min-width:350px;">
+                          <font size="3">
+                            <em>  Two primary input modalities prevail in image retrieval: sketch and text. While text is widely used for inter-category retrieval tasks, sketches have been established as the sole preferred modality for fine-grained image retrieval due to their ability to capture intricate visual details. In this paper, we question the reliance on sketches alone for fine-grained image retrieval by simultaneously exploring the fine-grained representation capabilities of both sketch and text, orchestrating a duet between the two. The end result enables precise retrievals previously unattainable, allowing users to pose ever-finer queries and incorporate attributes like colour and contextual cues from text. For this purpose, we introduce a novel compositionality framework, effectively combining sketches and text using pre-trained CLIP models, while eliminating the need for extensive fine-grained textual descriptions. Last but not least, our system extends to novel applications in composite image retrieval, domain attribute transfer, and fine-grained generation, providing solutions for various real-world scenarios.</em>
+                          </font>
+                        </div>
+                        <div id="CVPR24_1_bib" style="font-family:Courier;display:none;min-width:350px;">
+                          <font size="2">
+                            <br>
+                            @InProceedings{Sketch&TextFGSBIR,<br>
+                            author = {Subhadeep Koley  and Ayan Kumar Bhunia  and
+                              Aneeshan Sain and Pinaki Nath Chowdhury and Tao Xiang and Yi-Zhe Song},<br>
+                            title = {You’ll Never Walk Alone: A Sketch and Text Duet for
+  Fine-Grained Image Retrieval},<br>
+                            booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                            month = {June},<br>
+                            year = {2024}<br>
+                            }
+                          </font>
+                        </div>
+                      </td>
+                    </tr>
+
+
+                    <table
+                    style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <tbody>
+                      <tr>
+                        <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
+                          <p>
+                          </p>
+                          <heading>
+                            <font size="5" id="selected_pubs_2023">2023</font>
+                          </heading>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table
+                    style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <tbody>
 
                     <!--ICCV 23  -->
                   <tr onmouseout="ICCV23_1_stop()" onmouseover="ICCV23_1_start()">
@@ -758,7 +859,8 @@
                         <em>International Conference on Computer Vision (<strong>
                             <font size="3.5">ICCV</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023.
+                        <!-- <font color="red"><strong>(New!)</strong></font> -->
                       </font>
                       <br>
                       <p></p>
@@ -946,7 +1048,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023  
                       </font>
                       <br>
                       <p></p>
@@ -1036,7 +1138,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023  
                       </font>
                       <br>
                       <p></p>
@@ -1134,7 +1236,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023  
                       </font>
                       <br>
                       <p></p>
@@ -1231,7 +1333,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023.
                       </font>
                       <br>
                       <p></p>
@@ -1343,7 +1445,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!) [Top 12 Award Candidates] </strong></font>
+                        2023 <font color="red"><strong>[Top 12 Award Candidates] </strong></font>
                       </font>
                       <br>
                       <p></p>
@@ -1444,7 +1546,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023  
                       </font>
                       <br>
                       <p></p>
@@ -1539,7 +1641,7 @@
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
+                        2023  
                       </font>
                       <br>
                       <p></p>
