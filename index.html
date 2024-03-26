@@ -350,11 +350,11 @@
                           2022.
                         </li>
 
-                        <li>
+                        <!-- <li>
                           <font size=3.5"> [July 2021]:</font></b> <i><b>Three</b></i> papers got accepted in
                           <b>ICCV</b>
                           2021.
-                        </li>
+                        </li> -->
 
 
                         <!-- <li>
@@ -365,7 +365,7 @@
                             </a>
                         </li> -->
 
-                        <li>
+                        <!-- <li>
                           <font size=3.5"> [March 2021] :</font></b> <i><b>Four</b></i> papers got accepted in
                           <b>CVPR</b>
                           2021.
@@ -387,7 +387,7 @@
                         <li>
                           <font size=3.5"> [March 2020] :</font></b> <i><b>One</b></i> paper got accepted in <b>CVPR</b>
                           2020 for <b>oral</b> presentation.
-                        </li>
+                        </li> -->
 
 
 
@@ -724,8 +724,9 @@
               <tbody>
 
 
+
                                     <!--CVPR 24-2  -->
-                                    <tr onmouseout="CVPR24_6_stop()" onmouseover="CVPR24_6_start()">
+                                    <tr onmouseout="CVPR24_6_stop()" onmouseover="CVPR24_6_start()" bgcolor="#ffffd0">
                                       <td style="padding:20px;width:25%;vertical-align:middle">
                                         <div class="one">
                                           <div class="two" id='CVPR24_6_image'><img src='images/CVPR24_6.JPG'></div>
@@ -797,10 +798,88 @@
                                         </div>
                                       </td>
                                     </tr>
+                                  </tr> 
 
-                                    
+
+                                        <!--CVPR 24-2  -->
+                                        <tr onmouseout="CVPR24_8_stop()" onmouseover="CVPR24_8_start()" bgcolor="#ffffd0">
+                                          <td style="padding:20px;width:25%;vertical-align:middle">
+                                            <div class="one">
+                                              <div class="two" id='CVPR24_8_image'><img src='images/CVPR24_8.JPG'></div>
+                                              <img src='images/CVPR24_8.JPG'>
+                                            </div>
+                                            <script type="text/javascript">
+                                              function CVPR24_8_start() {
+                                                document.getElementById('CVPR24_8_image').style.opacity = "1";
+                                              }
+                      
+                                              function CVPR24_8_stop() {
+                                                document.getElementById('CVPR24_8_image').style.opacity = "0";
+                                              }
+                                              CVPR24_8_stop()
+                                            </script>
+                                          </td>
+                                          <td style="padding:10px;width:75%;vertical-align:middle">
+                                            <a href="https://arxiv.org/pdf/2403.07234.pdf" target="_blank">
+                                              <papertitle>
+                                                <font size="3">It's All About Your Sketch: Democratising Sketch Control in Diffusion Models</font>
+                                              </papertitle>
+                                            </a>
+                                            <br><br>
+                                             
+                                            <font size="3">Subhadeep Koley</font>, <strong><font size="3"> Ayan Kumar Bhunia</font></strong>,   <font size="3"> Deeptanshu Sekhri</font>,  
+                                            <font size="3">Aneeshan Sain</font>,    <font size="3">Pinaki Nath Chowdhury</font>,    <font size="3">Tao Xiang</font>,
+                                       <font size="3">Yi-Zhe Song</font>
+                                            <font size="3"></font>.
+                                            <br>
+                                            <font size="3">
+                                              <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
+                                                  <font size="3.5">CVPR</font>
+                                                </strong>)</em>,
+                                              2024 <font color="red"><strong>(New!)</strong></font>
+                                            </font>
+                                            <br>
+                                            <p></p>
+                                            <a href="javascript:void(0);" onclick="myFunction('CVPR24_8_abs')">
+                                              <font size="3">Abstract</font>
+                                            </a> /
+                                            <a href="https://github.com/ChenDarYen/DemoCaricature/" target="_blank">
+                                              <font size="3">Code</font>
+                                            </a> /
+                                            <a href="https://arxiv.org/pdf/2403.07234.pdf" target="_blank" target="_blank">
+                                              <font size="3">arXiv</font>
+                                            </a> /
+                                            <a href="javascript:void(0);" onclick="myFunction('CVPR24_8_bib')">
+                                              <font size="3">BibTex</font>
+                                            </a>
+                                            <p></p>
+                                            <div id="CVPR24_8_abs" style="display:none; text-align:justify;min-width:350px;">
+                                              <font size="3">
+                                                <em>  This paper unravels the potential of sketches for diffusion models, addressing the deceptive promise of direct sketch control in generative AI. We importantly democratise the process, enabling amateur sketches to generate precise images, living up to the commitment of "what you sketch is what you get". A pilot study underscores the necessity, revealing that deformities in existing models stem from spatial-conditioning. To rectify this, we propose an abstraction-aware framework, utilising a sketch adapter, adaptive time-step sampling, and discriminative guidance from a pre-trained fine-grained sketch-based image retrieval model, working synergistically to reinforce fine-grained sketch-photo association. Our approach operates seamlessly during inference without the need for textual prompts; a simple, rough sketch akin to what you and I can create suffices! We welcome everyone to examine results presented in the paper and its supplementary. Contributions include democratising sketch control, introducing an abstraction-aware framework, and leveraging discriminative guidance, validated through extensive experiments.
+                    
+                    </em>
+                                              </font>
+                                            </div>
+                                            <div id="CVPR24_8_bib" style="font-family:Courier;display:none;min-width:350px;">
+                                              <font size="2">
+                                                <br>
+                                                @InProceedings{StableSketching,<br>
+                                                author = {Subhadeep Koley and Ayan Kumar Bhunia and Deeptanshu Sekhri, and Aneeshan Sain and Pinaki Nath Chowdhury and Tao Xiang and Yi-Zhe Song},<br>
+                                                title = {It's All About Your Sketch: Democratising Sketch Control in Diffusion Models},<br>
+                                                booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                                                month = {June},<br>
+                                                year = {2024}<br>
+                    
+                                                Subhadeep Koley
+                     
+                                                }
+                                              </font>
+                                            </div>
+                                          </td>
+                                        </tr>
+
                     <!--CVPR 24-1  -->
-                    <tr onmouseout="CVPR24_1_stop()" onmouseover="CVPR24_1_start()">
+                    <tr onmouseout="CVPR24_1_stop()" onmouseover="CVPR24_1_start()" bgcolor="#ffffd0">
                       <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
                           <div class="two" id='CVPR24_1_image'><img src='images/CVPR24_1.JPG'></div>
@@ -961,7 +1040,7 @@
 
 
                                         <!--CVPR 24-2  -->
-                                        <tr onmouseout="CVPR24_5_stop()" onmouseover="CVPR24_5_start()">
+                                        <tr onmouseout="CVPR24_5_stop()" onmouseover="CVPR24_5_start()" bgcolor="#ffffd0">
                                           <td style="padding:20px;width:25%;vertical-align:middle">
                                             <div class="one">
                                               <div class="two" id='CVPR24_5_image'><img src='images/CVPR24_5.JPG'></div>
@@ -1037,7 +1116,7 @@
                                           </td>
                                         </tr>
                             <!--CVPR 24-2  -->
-                            <tr onmouseout="CVPR24_3_stop()" onmouseover="CVPR24_3_start()">
+                            <tr onmouseout="CVPR24_3_stop()" onmouseover="CVPR24_3_start()" bgcolor="#ffffd0">
                               <td style="padding:20px;width:25%;vertical-align:middle">
                                 <div class="one">
                                   <div class="two" id='CVPR24_3_image'><img src='images/CVPR24_3.JPG'></div>
@@ -1111,6 +1190,81 @@
                                 </div>
                               </td>
                             </tr>
+
+                                                <!--CVPR 24-2  -->
+                    <tr onmouseout="CVPR24_7_stop()" onmouseover="CVPR24_7_start()">
+                      <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                          <div class="two" id='CVPR24_7_image'><img src='images/CVPR24_7.JPG'></div>
+                          <img src='images/CVPR24_7.JPG'>
+                        </div>
+                        <script type="text/javascript">
+                          function CVPR24_7_start() {
+                            document.getElementById('CVPR24_7_image').style.opacity = "1";
+                          }
+  
+                          function CVPR24_7_stop() {
+                            document.getElementById('CVPR24_7_image').style.opacity = "0";
+                          }
+                          CVPR24_7_stop()
+                        </script>
+                      </td>
+                      <td style="padding:10px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2403.09480" target="_blank">
+                          <papertitle>
+                            <font size="3">What Sketch Explainability
+Really Means for Downstream Tasks</font>
+                          </papertitle>
+                        </a>
+                        <br><br>
+                         
+                        <font size="3">Hmrishav Bandyopadhyay</font>,  <font size="3">Pinaki Nath Chowdhury</font>,  <strong><font size="3"> Ayan Kumar Bhunia</font></strong>,   
+                        <font size="3">Aneeshan Sain</font>,    <font size="3">Tao Xiang</font>,
+                   <font size="3">Yi-Zhe Song</font>
+                        <font size="3"></font>.
+                        <br>
+                        <font size="3">
+                          <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
+                              <font size="3.5">CVPR</font>
+                            </strong>)</em>,
+                          2024 <font color="red"><strong>(New!)</strong></font>
+                        </font>
+                        <br>
+                        <p></p>
+                        <a href="javascript:void(0);" onclick="myFunction('CVPR24_7_abs')">
+                          <font size="3">Abstract</font>
+                        </a> /
+                        <a href="https://github.com/ChenDarYen/DemoCaricature/" target="_blank">
+                          <font size="3">Code</font>
+                        </a> /
+                        <a href="https://arxiv.org/abs/2403.09480" target="_blank" target="_blank">
+                          <font size="3">arXiv</font>
+                        </a> /
+                        <a href="javascript:void(0);" onclick="myFunction('CVPR24_7_bib')">
+                          <font size="3">BibTex</font>
+                        </a>
+                        <p></p>
+                        <div id="CVPR24_7_abs" style="display:none; text-align:justify;min-width:350px;">
+                          <font size="3">
+                            <em>  In this paper, we explore the unique modality of sketch for explainability, emphasising the profound impact of human strokes compared to conventional pixel-oriented studies. Beyond explanations of network behavior, we discern the genuine implications of explainability across diverse downstream sketch-related tasks. We propose a lightweight and portable explainability solution -- a seamless plugin that integrates effortlessly with any pre-trained model, eliminating the need for re-training. Demonstrating its adaptability, we present four applications: highly studied retrieval and generation, and completely novel assisted drawing and sketch adversarial attacks. The centrepiece to our solution is a stroke-level attribution map that takes different forms when linked with downstream tasks. By addressing the inherent non-differentiability of rasterisation, we enable explanations at both coarse stroke level (SLA) and partial stroke level (P-SLA), each with its advantages for specific downstream tasks.
+
+</em>
+                          </font>
+                        </div>
+                        <div id="CVPR24_7_bib" style="font-family:Courier;display:none;min-width:350px;">
+                          <font size="2">
+                            <br>
+                            @InProceedings{DemoCaricature,<br>
+                            author = {Hmrishav Bandyopadhyay and Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Aneeshan Sain and Pinaki Nath Chowdhury and Yi-Zhe Song},<br>
+                            title = {What Sketch Explainability Really Means for Downstream Tasks},<br>
+                            booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                            month = {June},<br>
+                            year = {2024}<br>
+                            }
+                          </font>
+                        </div>
+                      </td>
+                    </tr>
 
 
                                         <!--CVPR 24-2  -->
@@ -1795,7 +1949,7 @@
                   </tr>
 
                   <!-- CVPR23 - SKETCH -->
-                  <tr onmouseout="CVPR23_5_stop()" onmouseover="CVPR23_5_start()">
+                  <tr onmouseout="CVPR23_5_stop()" onmouseover="CVPR23_5_start()" bgcolor="#ffffd0">
                     <td style="padding:20px;width:25%;vertical-align:middle">
                       <div class="one">
                         <div class="two" id='CVPR23_5_image'><img src='images/CVPR23_5.JPG'></div>
