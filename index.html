@@ -16,95 +16,12 @@
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .navbar {
-      overflow: hidden;
-      background-color: #A1A6B4;
-    }
-
-
-    .navbar a {
-      float: left;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .navbar a:hover,
-    .dropdown:hover .dropbtn {
-      background-color: #000100;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
-
-  <!-- <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#recent_updates">Recent Updates</a></li>
-      <li><a href="#research_interest">Research Interest</a></li>
-      <li><a href="#selected_pubs">
-        <button class="dropbtn">Selected Publication 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </a></li>
-      <li><a href="">CV</a></li>
-    </ul> -->
-  <!-- </nav> -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 
   <title>Dr Ayan Kumar Bhunia | Computer Vision and Machine Learning Researcher</title>
-
+  <meta name="description" content="Dr. Ayan Kumar Bhunia — Senior Research Scientist at Sony PlayStation. PhD in Computer Vision from University of Surrey. 27× CVPR, 5× ICCV, 5× ECCV publications. Sketch-based vision, deep learning.">
   <meta name="author" content="Dr Ayan Kumar Bhunia | Computer Vision Researcher">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -117,17 +34,18 @@
   
 
 <body>
-  <table
-    style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom: 0px;margin-top: 0px;">
-    <div class="navbar">
+  <a href="#home" class="skip-link">Skip to content</a>
+  <div class="site-container">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#recent_updates">Recent Updates</a>
       <!-- <a href="#research_interest">Research Interest</a> -->
       <div class="dropdown">
         <button class="dropbtn" onclick="location.href='#selected_pubs'">Publications
-          <i class="fa fa-caret-down"></i>
+          <i class="fa-solid fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
+          <a href="#selected_pubs_2025">2025</a>
           <a href="#selected_pubs_2024">2024</a>
           <a href="#selected_pubs_2023">2023</a>
           <a href="#selected_pubs_2022">2022</a>
@@ -136,22 +54,17 @@
         </div>
       </div>
       <a href="https://drive.google.com/file/d/1sLayUPMU_Mhxv0i1G_Tt5yyx8KxzO8Pn/view?usp=sharing"
-        target="_blank">CV</a>
-      <!-- <a href="all_paper.html">All Papers</a> -->
-    </div>
+        target="_blank" rel="noopener">CV</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+    </nav>
 
-    <table
-      style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+    <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
                     <p style="text-align:center">
-                      <name id="home">Dr. Ayan Kumar Bhunia </name>
+                      <name>Dr. Ayan Kumar Bhunia</name>
                     </p>
 
                     <p style="text-align:justify">
@@ -161,7 +74,7 @@
                         from <a href="http://sketchx.eecs.qmul.ac.uk/" target="_blank">
                           <font size="3">SketchX Lab,</font>
                         </a>
-                        <a href="https://www.surrey.ac.uk/centre-vision-speech-signal-processing" target=" _blank">
+                        <a href="https://www.surrey.ac.uk/centre-vision-speech-signal-processing" target="_blank">
                           <font size="3">Centre for Vision,
                             Speech and Signal Processing (CVSSP)</font>
                         </a>, <a href="https://www.surrey.ac.uk/" target="_blank">
@@ -203,7 +116,7 @@
                         Currently, I am working as a <b>Senior Research Scientist</b> at <a
                           href="https://sonyinteractive.com/en/news/blog/sony-interactive-entertainment-to-acquire-isize-a-uk-based-company-specializing-in-deep-learning-for-video-delivery/" target="_blank">
                           <font size="3">Sony PlayStation, London.</font>
-                        </a>I specialize in Computer Vision/Deep Learning, contributing to the dynamic field of the gaming industry. 
+                        </a> I specialize in Computer Vision/Deep Learning, contributing to the dynamic field of the gaming industry. 
                          Formerly, I played an important role at iSIZE, a London-based deep-tech startup focused on AI for Video Delivery,
                           where <b>I led the Compressed Video Denoising project</b>. During this time, I designed and developed a deep model 
                           from the ground up - <b>a low-cost neural solution aimed at eliminating compressed video artifacts</b>.
@@ -231,101 +144,61 @@
                         
 
              
-                    Top-venue Publications (Oct 2025):
-                    27x<b>CVPR</b>, 5x<b>ICCV</b>, 5x<b>ECCV</b>, 1x<b>Siggraph Asia</b>.
+                    <span class="pub-stats">Top-venue publications (Oct 2025): 27× CVPR · 5× ICCV · 5× ECCV · 1× Siggraph Asia</span>
 
-
-                    <p style="text-align:center">
-                      <a href="https://scholar.google.co.in/citations?user=gjslbzsAAAAJ&hl=en" target="_blank">
-                        <font size="3">Google Scholar </font>
-                      </a> &nbsp/&nbsp
-                      <a href="https://github.com/AyanKumarBhunia" target="_blank">
-                        <font size="3"> GitHub </font>
-                      </a> &nbsp/&nbsp
-                      <a href="https://www.linkedin.com/in/loansurrey/" target="_blank">
-                        <font size="3"> LinkedIn </font>
-                      </a> &nbsp/&nbsp
-                      <a href="https://dblp.org/pers/b/Bhunia:Ayan_Kumar.html" target="_blank">
-                        <font size="3"> DBLP </font>
-                      </a> 
+                    <p class="social-links" style="text-align:center">
+                      <a href="https://scholar.google.co.in/citations?user=gjslbzsAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+                        <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+                      </a>
+                      <a href="https://github.com/AyanKumarBhunia" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i> GitHub
+                      </a>
+                      <a href="https://www.linkedin.com/in/ayankumarbhunia/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                      </a>
+                      <a href="https://dblp.org/pers/b/Bhunia:Ayan_Kumar.html" target="_blank" rel="noopener" aria-label="DBLP">
+                        <i class="fa-solid fa-book"></i> DBLP
+                      </a>
                       <!-- &nbsp/&nbsp <a href="https://www.facebook.com/kumar2ayan/" target="_blank">
                         <font size="3"> FaceBook </font>
                       </a> -->
                     </p>
-                  </td>
+      </div>
+      <div class="hero-image">
+        <a href="images/ayan_new_circle.png"><img src="images/ayan_new_circle.png" alt="Dr. Ayan Kumar Bhunia profile photo"></a>
+      </div>
+    </section>
 
-                  <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/ayan_new_circle.png"><img style="width:100%;max-width:100%" alt="profile photo"
-                        src="images/ayan_new_circle.png" class="hoverZoomLink"></a>
-
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-
-
-            <!--            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
-            <table>
+    <section id="recent_updates">
+            <table style="width:100%;">
               <tbody>
                 <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">
-                    <heading>
-                      <font size="5" id="recent_updates">Recent Updates </font>
-                    </heading>
-                    <p>
-                      <font size="3">
-
-                        <li> 
-                        </sup><font size=3.5 color="red"> <strong>New!!</strong></font>
-    <!-- <!-- </sup> -->
-
-  <font size=3.5"> [July 2025]:</font></b> <i><b>One</b></i> paper got accepted in
-    <b>ICCV'25.</b>
-  
-</li>
-
-
-                                              <li> 
-                                              </sup><font size=3.5 color="red"> <strong>New!!</strong></font>
-                          <!-- <!-- </sup> -->
-                    
-                        <font size=3.5"> [Feb 2025]:</font></b> <i><b>Two</b></i> papers got accepted in
-                          <b>CVPR'25.</b>
-                        
+                  <td style="padding:8px 20px 12px;width:100%;vertical-align:middle;text-align:justify">
+                    <heading>Recent Updates</heading>
+                    <ul class="updates-list">
+                      <li>
+                        <strong>[July 2025]:</strong> <i><b>One</b></i> paper got accepted in <b>ICCV'25.</b>
                       </li>
-                      <li></sup>
-                        <font size=3.5"> [July 2024]:</font></b> <i><b>Two</b></i> papers got accepted in
-                          <b>ECCV'24.</b>
-                        
+                      <li>
+                        <strong>[Feb 2025]:</strong> <i><b>Two</b></i> papers got accepted in <b>CVPR'25.</b>
                       </li>
-                                
-                      <li> 
-        <!-- <sup><font color="red"><strong>New!!</strong></font>
-                          </sup> -->
-                        </sup>
-                        <font size=3.5"> [Feb 2024]:</font></b> <i><b>Eight</b></i> papers got accepted in
-                          <b>CVPR'24.</b>
+                      <li>
+                        <strong>[July 2024]:</strong> <i><b>Two</b></i> papers got accepted in <b>ECCV'24.</b>
                       </li>
-
-              
-
-                         <li> 
-                        </sup>
-                        <font size=3.5"> [July 2023]:</font></b> <i> One work on <b>Sketch-Based 3D Shape Retrieval</b> is accepted in <b>ICCV'23!</b>
+                      <li>
+                        <strong>[Feb 2024]:</strong> <i><b>Eight</b></i> papers got accepted in <b>CVPR'24.</b>
                       </li>
-                      
-                        <li><sup>
-                    
-                          </sup>
-                          <font size=3.5"> [March 2023]:</font></b> <i><b>Our paper <a
+                      <li>
+                        <strong>[July 2023]:</strong> <i>One work on <b>Sketch-Based 3D Shape Retrieval</b> is accepted in <b>ICCV'23!</b></i>
+                      </li>
+                      <li>
+                        <strong>[March 2023]:</strong> <i><b>Our paper <a
                                 href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chowdhury_What_Can_Human_Sketches_Do_for_Object_Detection_CVPR_2023_paper.pdf" target="_blank">
                                 <font size="3"> What Can Human Sketches Do for Object Detection? </font>
                               </a></b></i> (CVPR'23)
                           has been selected among <b>12 award candidates </b>, out of 9155 submissions and 2360
-                          accepted papers in <b>CVPR, 2023 </b>.
+                          accepted papers in <b>CVPR, 2023</b>.
                         </li>
-
                         <!-- <li><sup>
                             <font color="red"><strong>New!!</strong></font>
                           </sup>
@@ -339,18 +212,11 @@
 
 
 
-                        <li><sup>
-                     
-                          </sup>
-                          <font size=3.5"> [March 2023]:</font></b> <i><b>Seven</b></i> papers got accepted in
-                          <b>CVPR</b>
-                          2023. 
+                        <li>
+                          <strong>[March 2023]:</strong> <i><b>Seven</b></i> papers got accepted in <b>CVPR</b> 2023.
                         </li>
-
-                        <li><sup>
-                       
-                          </sup>
-                          <font size=3.5"> [Oct 2022]: </font></b> <b>Defended my <a
+                        <li>
+                          <strong>[Oct 2022]:</strong> <b>Defended my <a
                               href="https://arxiv.org/abs/2210.15146" target="_blank">
                               <font size="3">PhD Thesis</font>
                             </a> before </b> <a href="https://www1.icsi.berkeley.edu/~stellayu/" target="_blank">
@@ -358,21 +224,13 @@
                           </a> and <a href="https://www.surrey.ac.uk/people/adrian-hilton" target="_blank">
                             <font size="3">Prof.
                               Adrian Hilton</font>
-                          </a> — with <i><b>No corrections</b></i>
+                          </a> — with <i><b>No corrections</b></i></b>
                         </li>
-
-                        <li><sup>
-                          </sup>
-                          <font size=3.5"> [July 2022]:</font></b> <i><b>Two</b></i> papers got accepted in <b>ECCV</b>
-                          2022.
+                        <li>
+                          <strong>[July 2022]:</strong> <i><b>Two</b></i> papers got accepted in <b>ECCV</b> 2022.
                         </li>
-
-                        <li><sup>
-                            <!-- <font color="red"><strong>New!!</strong></font> -->
-                          </sup>
-                          <font size=3.5"> [March 2022]:</font></b> <i><b>Four</b></i> papers got accepted in
-                          <b>CVPR</b>
-                          2022.
+                        <li>
+                          <strong>[March 2022]:</strong> <i><b>Four</b></i> papers got accepted in <b>CVPR</b> 2022.
                         </li>
 
                         <!-- <li>
@@ -418,19 +276,17 @@
 
                         <!--<a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/" target="_blank"><font size="3">-->
                         <!--                Dr. Yi-Zhe Song</font></a>-->
-                    </p>
+                    </ul>
                     <!-- <p>
                       <a class="button" style="color:#FFA500"><strong style="font-size:12px">Notes:</strong></a>
                       <em style="font-size:16px;"> If you are interested in some potential research collaboration,
                         feel free to contact me by Email or
-                        <a href="https://www.linkedin.com/in/loansurrey/" target="_blank">
+                        <a href="https://www.linkedin.com/in/ayankumarbhunia/" target="_blank">
                           <font size="3"> LinkedIn.</font>
                         </a> Most importantly, I would
                         be happy to collaborate with some really self-motivated and enthusiastic undergraduate or
                         post-graduate
                         students who have intention to pursue MS/Ph.D. in future. -->
-                    </p>
-                    </font>
                     </p>
                   </td>
                 </tr>
@@ -438,7 +294,7 @@
             </table>
 
             <!--        <table-->
-            <!--            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
+            <!--            style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
             <!--            <tbody>-->
             <!--              <tr>-->
             <!--                <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">-->
@@ -468,7 +324,7 @@
 
             <!-- <table -->
              
-          <!-- style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"> --> 
+          <!-- style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"> --> 
               <!-- <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">
@@ -583,7 +439,7 @@
 
               <!--&lt;!&ndash; Updates on Recent Activities  &ndash;&gt;-->
               <!--          <table-->
-              <!--            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
+              <!--            style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">-->
               <!--            <tbody>-->
               <!--              <tr>-->
               <!--                <td-->
@@ -686,7 +542,7 @@
 
 
 
-              <!--        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
+              <!--        <table style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
               <!--            <tr>-->
               <!--            <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">-->
               <!--              <heading><font size="5">Research Interests</font></heading>-->
@@ -726,12 +582,8 @@
                 }
               </script>
 
-
-
-
-
-              <table
-              style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <table class="pub-table"
+              style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -744,8 +596,8 @@
                 </tr>
               </tbody>
             </table>
-            <table
-              style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="pub-table"
+              style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
                 <tr onmouseout="ICCV25_1_stop()" onmouseover="ICCV25_1_start()">
@@ -779,8 +631,7 @@
                       <em>International Conference on Computer Vision (<strong>
                           <font size="3.5">ICCV</font>
                         </strong>)</em>,
-                      2025 <font color="red"><strong>(New!)</strong></font>
-                    </font>
+                      2025                    </font>
                     <br>
                     <p></p>
                     <a href="javascript:void(0);" onclick="myFunction('ICCV25_1_abs')">
@@ -847,8 +698,7 @@
                       <em>Computer Vision and Pattern Recognition (<strong>
                           <font size="3.5">CVPR</font>
                         </strong>)</em>,
-                      2025 <font color="red"><strong>(New!)</strong></font>
-                    </font>
+                      2025                    </font>
                     <br>
                     <p></p>
                     <a href="javascript:void(0);" onclick="myFunction('CVPR25_1_abs')">
@@ -915,8 +765,7 @@
                       <em>Computer Vision and Pattern Recognition (<strong>
                           <font size="3.5">CVPR</font>
                         </strong>)</em>,
-                      2025 <font color="red"><strong>(New!)</strong></font>
-                    </font>
+                      2025                    </font>
                     <br>
                     <p></p>
                     <a href="javascript:void(0);" onclick="myFunction('CVPR25_2_abs')">
@@ -957,7 +806,7 @@
 
 
               <table
-              style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -970,8 +819,8 @@
                 </tr>
               </tbody>
             </table>
-            <table
-              style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table class="pub-table"
+              style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
 
@@ -1076,8 +925,7 @@
                       <em>European Conference on Computer Vision (<strong>
                           <font size="3.5">ECCV</font>
                         </strong>)</em>,
-                      2024 <font color="red"><strong>(New!)</strong></font>
-                    </font>
+                      2024                    </font>
                     <br>
                     <p></p>
                     <a href="javascript:void(0);" onclick="myFunction('ECCV24_10_abs')">
@@ -1148,8 +996,7 @@
                                           <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                                               <font size="3.5">CVPR</font>
                                             </strong>)</em>,
-                                          2024 <font color="red"><strong>(New!)</strong></font>
-                                        </font>
+                                          2024                                        </font>
                                         <br>
                                         <p></p>
                                         <a href="javascript:void(0);" onclick="myFunction('CVPR24_6_abs')">
@@ -1224,8 +1071,7 @@
                                               <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                                                   <font size="3.5">CVPR</font>
                                                 </strong>)</em>,
-                                              2024 <font color="red"><strong>(New!)</strong></font>
-                                            </font>
+                                              2024                                            </font>
                                             <br>
                                             <p></p>
                                             <a href="javascript:void(0);" onclick="myFunction('CVPR24_8_abs')">
@@ -1305,8 +1151,7 @@
                           <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                               <font size="3.5">CVPR</font>
                             </strong>)</em>,
-                          2024 <font color="red"><strong>(New!)</strong></font>
-                        </font>
+                          2024                        </font>
                         <br>
                         <p></p>
                         <a href="javascript:void(0);" onclick="myFunction('CVPR24_1_abs')">
@@ -1383,8 +1228,7 @@
                           <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                               <font size="3.5">CVPR</font>
                             </strong>)</em>,
-                          2024 <font color="red"><strong>(New!)</strong></font>
-                        </font>
+                          2024                        </font>
                         <br>
                         <p></p>
                         <a href="javascript:void(0);" onclick="myFunction('CVPR24_4_abs')">
@@ -1465,8 +1309,7 @@
                                               <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                                                   <font size="3.5">CVPR</font>
                                                 </strong>)</em>,
-                                              2024 <font color="red"><strong>(New!)</strong></font>
-                                            </font>
+                                              2024                                            </font>
                                             <br>
                                             <p></p>
                                             <a href="javascript:void(0);" onclick="myFunction('CVPR24_5_abs')">
@@ -1541,8 +1384,7 @@
                                   <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                                       <font size="3.5">CVPR</font>
                                     </strong>)</em>,
-                                  2024 <font color="red"><strong>(New!)</strong></font>
-                                </font>
+                                  2024                                </font>
                                 <br>
                                 <p></p>
                                 <a href="javascript:void(0);" onclick="myFunction('CVPR24_3_abs')">
@@ -1615,8 +1457,7 @@ Really Means for Downstream Tasks</font>
                           <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                               <font size="3.5">CVPR</font>
                             </strong>)</em>,
-                          2024 <font color="red"><strong>(New!)</strong></font>
-                        </font>
+                          2024                        </font>
                         <br>
                         <p></p>
                         <a href="javascript:void(0);" onclick="myFunction('CVPR24_7_abs')">
@@ -1694,8 +1535,7 @@ Really Means for Downstream Tasks</font>
                                               <em>IEEE Conference on Computer Vision and Pattern Recognition  (<strong>
                                                   <font size="3.5">CVPR</font>
                                                 </strong>)</em>,
-                                              2024 <font color="red"><strong>(New!)</strong></font>
-                                            </font>
+                                              2024                                            </font>
                                             <br>
                                             <p></p>
                                             <a href="javascript:void(0);" onclick="myFunction('CVPR24_2_abs')">
@@ -1733,7 +1573,7 @@ Really Means for Downstream Tasks</font>
                                         </tr>
 
                     <table
-                    style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tbody>
                       <tr>
                         <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -1746,8 +1586,8 @@ Really Means for Downstream Tasks</font>
                       </tr>
                     </tbody>
                   </table>
-                  <table
-                    style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                  <table class="pub-table"
+                    style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tbody>
 
                     <!--ICCV 23  -->
@@ -1789,7 +1629,7 @@ Really Means for Downstream Tasks</font>
                             <font size="3.5">ICCV</font>
                           </strong>)</em>,
                         2023.
-                        <!-- <font color="red"><strong>(New!)</strong></font> -->
+                        <!-- -->
                       </font>
                       <br>
                       <p></p>
@@ -1880,8 +1720,7 @@ Really Means for Downstream Tasks</font>
                         <em>IEEE Conference on Computer Vision and Pattern Recognition (<strong>
                             <font size="3.5">CVPR</font>
                           </strong>)</em>,
-                        2023 <font color="red"><strong>(New!)</strong></font>
-                      </font>
+                        2023                      </font>
                       <br>
                       <p></p>
                       <a href="javascript:void(0);" onclick="myFunction('CVPR23_2_abs')">
@@ -2639,7 +2478,7 @@ Really Means for Downstream Tasks</font>
 
 
               <table
-                style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <tr>
                     <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -2654,8 +2493,8 @@ Really Means for Downstream Tasks</font>
               </table>
 
 
-              <table
-                style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
 
 
@@ -3230,7 +3069,7 @@ Really Means for Downstream Tasks</font>
 
 
               <table
-                style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <tr>
                     <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -3244,8 +3083,8 @@ Really Means for Downstream Tasks</font>
                 </tbody>
               </table>
 
-              <table
-                style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
 
 
@@ -3967,7 +3806,7 @@ Really Means for Downstream Tasks</font>
 
 
               <table
-                style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <tr>
                     <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -3981,8 +3820,8 @@ Really Means for Downstream Tasks</font>
                 </tbody>
               </table>
 
-              <table
-                style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <!-- siggraphasia2020 - HANDWRITING RECOGNITION -->
                   <tr onmouseout="siga2020_0_stop()" onmouseover="siga20_0_start()">
@@ -4394,7 +4233,7 @@ Really Means for Downstream Tasks</font>
               </table>
 
               <table
-                style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
                   <tr>
                     <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
@@ -4408,8 +4247,8 @@ Really Means for Downstream Tasks</font>
                 </tbody>
               </table>
 
-              <table
-                style="width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
 
                   <!-- CVPR 2019 - HANDWRITING RECOGNITION -->
@@ -4999,7 +4838,7 @@ Really Means for Downstream Tasks</font>
                   </tr>
                 </tbody>
               </table>
-              <!--        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
+              <!--        <table style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
               <!--            <tr>-->
               <!--            <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">-->
               <!--               <p>-->
@@ -5047,28 +4886,44 @@ Really Means for Downstream Tasks</font>
 
 
 
-            <!-- Footer - Template Credits -->
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr>
-                  <td style="padding:0px">
-                    <br>
-                    <p style="text-align:center;font-size:small;">
-                      Template credits :
-                      <a href="https://jonbarron.info/" target="_blank">Dr. Jon Barron</a>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <footer class="site-footer">
+              <p>Template credits: <a href="https://jonbarron.info/" target="_blank" rel="noopener">Dr. Jon Barron</a></p>
+            </footer>
 
           </td>
         </tr>
     </table>
 
+    </main>
+
     <a href="https://clustrmaps.com/site/1bggn" title="Visit tracker"><img
-        src="//www.clustrmaps.com/map_v2.png?d=3ggBviUhnXIQYDHmIz11N6EfhXliwaA0PSN5rvVKWPs&cl=ffffff"></a>
+        src="//www.clustrmaps.com/map_v2.png?d=3ggBviUhnXIQYDHmIz11N6EfhXliwaA0PSN5rvVKWPs&cl=ffffff" alt="Visitor map"></a>
+
+    </div>
+
+    <script>
+      (function() {
+        document.querySelectorAll('main img:not(.hero-image img)').forEach(function(img) {
+          img.loading = 'lazy';
+        });
+      })();
+      (function() {
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        if (savedTheme === 'dark') {
+          themeIcon.className = 'fa-solid fa-sun';
+        }
+        themeToggle.addEventListener('click', function() {
+          const current = document.documentElement.getAttribute('data-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          themeIcon.className = next === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+          localStorage.setItem('theme', next);
+        });
+      })();
+    </script>
 
     <!--        <table align=center width=300px>-->
     <!--      <tr><td align=center width=300px>-->
