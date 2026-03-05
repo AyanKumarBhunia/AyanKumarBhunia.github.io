@@ -36,15 +36,25 @@
 <body>
   <a href="#home" class="skip-link">Skip to content</a>
   <div class="site-container">
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#recent_updates">Recent Updates</a>
-      <!-- <a href="#research_interest">Research Interest</a> -->
+    <header class="nav-header">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <span class="nav-brand">Dr. Ayan Kumar Bhunia</span>
+      <button class="theme-toggle theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" id="themeIconMobile"></i>
+      </button>
+    </header>
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+    <nav class="navbar" id="mainNav" role="navigation" aria-label="Main navigation">
+      <button class="nav-close" id="navClose" aria-label="Close menu"><i class="fa-solid fa-times"></i></button>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#recent_updates" class="nav-link">Recent Updates</a>
       <div class="dropdown">
-        <button class="dropbtn" onclick="location.href='#selected_pubs'">Publications
+        <button class="dropbtn" id="pubDropbtn" aria-haspopup="true" aria-expanded="false">Publications
           <i class="fa-solid fa-caret-down"></i>
         </button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="pubDropdown">
           <a href="#selected_pubs_2025">2025</a>
           <a href="#selected_pubs_2024">2024</a>
           <a href="#selected_pubs_2023">2023</a>
@@ -54,7 +64,7 @@
         </div>
       </div>
       <a href="https://drive.google.com/file/d/1sLayUPMU_Mhxv0i1G_Tt5yyx8KxzO8Pn/view?usp=sharing"
-        target="_blank" rel="noopener">CV</a>
+        target="_blank" rel="noopener" class="nav-link">CV</a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
         <i class="fa-solid fa-moon" id="themeIcon"></i>
       </button>
@@ -127,7 +137,7 @@
                         <p align="justify">
                           <font size="3">
                             I am also deeply passionate about leveraging <b>Free-hand Sketch</b> as a <b>user-friendly</b> and <b>interactive medium</b> for a 
-                          <b>diverse range of computer vision tasks</b>. This includes but is not limited to fine-grained 
+                          <b>diverse range of computer vision tasks</b>, which I explored during my PhD and association with <a href="http://sketchx.eecs.qmul.ac.uk/" target="_blank"><font size="3">SketchX Lab</font></a>. This includes but is not limited to fine-grained 
                           <a href="https://github.com/AyanKumarBhunia/on-the-fly-FGSBIR" target="_blank"><font size="3">image retrieval</font></a>, 
                           <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Koley_Picture_That_Sketch_Photorealistic_Image_Generation_From_Abstract_Sketches_CVPR_2023_paper.pdf" target="_blank"><font size="3">image generation</font></a>, 
                           <a href="https://democaricature.github.io/" target="_blank"><font size="3">image editing</font></a>, 
@@ -4911,17 +4921,75 @@ Really Means for Downstream Tasks</font>
       (function() {
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        const themeIconMobile = document.getElementById('themeIconMobile');
         const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', savedTheme);
-        if (savedTheme === 'dark') {
-          themeIcon.className = 'fa-solid fa-sun';
+        function updateThemeIcons(theme) {
+          const iconClass = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+          if (themeIcon) themeIcon.className = iconClass;
+          if (themeIconMobile) themeIconMobile.className = iconClass;
         }
-        themeToggle.addEventListener('click', function() {
+        updateThemeIcons(savedTheme);
+        function toggleTheme() {
           const current = document.documentElement.getAttribute('data-theme');
           const next = current === 'dark' ? 'light' : 'dark';
           document.documentElement.setAttribute('data-theme', next);
-          themeIcon.className = next === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+          updateThemeIcons(next);
           localStorage.setItem('theme', next);
+        }
+        if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+        if (themeToggleMobile) themeToggleMobile.addEventListener('click', toggleTheme);
+      })();
+      (function() {
+        const hamburger = document.getElementById('hamburgerBtn');
+        const nav = document.getElementById('mainNav');
+        const overlay = document.getElementById('navOverlay');
+        const navClose = document.getElementById('navClose');
+        const pubDropbtn = document.getElementById('pubDropbtn');
+        const pubDropdown = document.getElementById('pubDropdown');
+        const dropdown = pubDropbtn ? pubDropbtn.closest('.dropdown') : null;
+        const navLinks = document.querySelectorAll('.navbar .nav-link, .dropdown-content a');
+        function openMenu() {
+          nav.classList.add('is-open');
+          overlay.classList.add('is-open');
+          overlay.setAttribute('aria-hidden', 'false');
+          hamburger.setAttribute('aria-expanded', 'true');
+          hamburger.setAttribute('aria-label', 'Close menu');
+          document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+          nav.classList.remove('is-open');
+          overlay.classList.remove('is-open');
+          overlay.setAttribute('aria-hidden', 'true');
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.setAttribute('aria-label', 'Open menu');
+          document.body.style.overflow = '';
+          if (dropdown) dropdown.classList.remove('is-open');
+        }
+        if (hamburger) hamburger.addEventListener('click', function() {
+          nav.classList.contains('is-open') ? closeMenu() : openMenu();
+        });
+        if (overlay) overlay.addEventListener('click', closeMenu);
+        if (navClose) navClose.addEventListener('click', closeMenu);
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) closeMenu();
+          });
+        });
+        if (pubDropbtn && dropdown) {
+          pubDropbtn.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle('is-open');
+              pubDropbtn.setAttribute('aria-expanded', dropdown.classList.contains('is-open'));
+            } else {
+              window.location.href = '#selected_pubs';
+            }
+          });
+        }
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 768 && nav && nav.classList.contains('is-open')) closeMenu();
         });
       })();
     </script>
