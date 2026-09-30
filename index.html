@@ -57,6 +57,7 @@
           <i class="fa-solid fa-caret-down"></i>
         </button>
         <div class="dropdown-content" id="pubDropdown">
+          <a href="#selected_pubs_2026">2026</a>
           <a href="#selected_pubs_2025">2025</a>
           <a href="#selected_pubs_2024">2024</a>
           <a href="#selected_pubs_2023">2023</a>
@@ -188,6 +189,12 @@
                   <td style="padding:8px 20px 12px;width:100%;vertical-align:middle;text-align:justify">
                     <heading>Recent Updates</heading>
                     <ul class="updates-list">
+                      <li>
+                        <strong>[September 2026]:</strong> Our paper <b><a href="https://openreview.net/forum?id=jcDKvREUyt" target="_blank" rel="noopener">PlaySR: Real-time Super Resolution in Gaming</a></b> was accepted at the <b>ECCV 2026 Workshop on LoViF</b>.
+                      </li>
+                      <li>
+                        <strong>[July 2026]:</strong> Invited to serve as a <b>Senior Program Committee (SPC) member</b> for <b>AAAI 2027</b>.
+                      </li>
                       <li>
                         <strong>[March 2026]:</strong> Invited to serve as <b>Area Chair</b> (Meta-Reviewer) for Track 3 — <b>Image, Speech, Signal and Video Processing</b> — at <b><a href="https://iapr.org/icpr2026" target="_blank" rel="noopener">ICPR 2026</a></b> (Lyon, France).
                       </li>
@@ -596,6 +603,99 @@
                   }
                 }
               </script>
+
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr>
+                    <td style="padding:0px;width:100%;vertical-align:middle;text-align:justify">
+                      <p></p>
+                      <heading>
+                        <font size="5" id="selected_pubs_2026">2026</font>
+                      </heading>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="pub-table"
+                style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr bgcolor="#ffffd0">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <div class="one">
+                        <img class="playsr-pub-image" src="images/PlaySR.png" alt="PlaySR model architecture">
+                      </div>
+                    </td>
+                    <td style="padding:10px;width:75%;vertical-align:middle">
+                      <span class="badge-new">NEW</span>
+                      <a href="https://openreview.net/forum?id=jcDKvREUyt" target="_blank" rel="noopener">
+                        <papertitle>
+                          <font size="3">PlaySR: Real-time Super Resolution in Gaming</font>
+                        </papertitle>
+                      </a>
+                      <br><br>
+                      <font size="3">Aneeshan Sain</font>,
+                      <strong><font size="3">Ayan Kumar Bhunia</font></strong>,
+                      <font size="3">Pinaki Nath Chowdhury</font>.
+                      <br>
+                      <font size="3">
+                        <em>European Conference on Computer Vision Workshop on LoViF (<strong>
+                            <font size="3.5">ECCV Workshop</font>
+                          </strong>)</em>,
+                        2026
+                      </font>
+                      <br>
+                      <p></p>
+                      <a href="javascript:void(0);" onclick="myFunction('ECCV26_PlaySR_abs')">
+                        <font size="3">Key Idea</font>
+                      </a> /
+                      <a href="https://openreview.net/forum?id=jcDKvREUyt" target="_blank" rel="noopener">
+                        <font size="3">Paper</font>
+                      </a> /
+                      <a href="javascript:void(0);" onclick="myFunction('ECCV26_PlaySR_bib')">
+                        <font size="3">BibTex</font>
+                      </a>
+                      <p></p>
+                      <div id="ECCV26_PlaySR_abs" class="playsr-idea" style="display:none;">
+                        <p>One question from this work that we find particularly interesting goes beyond super-resolution:</p>
+                        <p class="playsr-idea-question">
+                          <strong>How should neural models balance motion information provided by the game engine with motion learned directly from pixels?</strong>
+                        </p>
+                        <p>
+                          Game engines already provide <strong>motion vectors (MVs)</strong> almost for free. They are highly useful for geometric motion, but can be unreliable for <strong>non-geometric effects</strong> such as <strong>shadows, reflections and transparency</strong>. 
+                        </p>
+                        <p>
+                          <strong>Optical flow (OF)</strong>, on the other hand, reasons directly from pixel changes and can complement MVs in these regions, but struggles with large motion and introduces additional computation.
+                        </p>
+                       
+                        <p>
+                          This creates an interesting learning problem: <strong>how do we exploit the complementary strengths of MV and OF without letting one dominate the other?</strong>
+                        </p>
+                        <p>
+                          In <strong>PlaySR</strong>, we tackle this by distilling MVs into image space, using optical flow as a corrective signal, and learning when to rely on each for temporal alignment. We then use a lightweight SR network to reconstruct temporally stable, high-resolution frames.
+                        </p>
+                        <p class="playsr-idea-takeaway">
+                          What makes this direction particularly interesting to me is that the <strong>MV–OF balancing problem is not specific to super-resolution</strong>. The same tension appears across ML for rendered content—including <strong>frame interpolation, frame extrapolation and multi-frame generation</strong>.
+                        </p>
+                        <p>
+                          More broadly, I think there is an exciting space at the intersection of <strong>game-engine priors and learned visual representations</strong>: using what the renderer already knows about the scene, while letting neural models learn where those signals are incomplete.
+                        </p>
+                      </div>
+                      <div id="ECCV26_PlaySR_bib" style="font-family:Courier;display:none;min-width:350px;">
+                        <font size="2">
+                          <br>
+                          @InProceedings{Sain2026PlaySR,<br>
+                          author = {Aneeshan Sain and Ayan Kumar Bhunia and Pinaki Nath Chowdhury},<br>
+                          title = {PlaySR: Real-time Super Resolution in Gaming},<br>
+                          booktitle = {European Conference on Computer Vision (ECCV) Workshop on LoViF},<br>
+                          year = {2026}<br>
+                          }
+                        </font>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
               <table class="pub-table"
               style="width:95%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
